@@ -36,9 +36,9 @@ def generate_reporte(datos):
     return reporte
 
 
-def save_date(reporte,filename):
+def save_date(reporte,filename, step='resumen'):
     # Guardar tabla
-    out_name = 'resumen_' + filename # Renombrar ya el archivo de salida
+    out_name = step + '_' + filename # Renombrar ya el archivo de salida
     out_path =  os. path.join(root_dir,"data", "processed", out_name)
     reporte.to_csv(out_path)
 
