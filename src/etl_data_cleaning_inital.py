@@ -87,12 +87,8 @@ def main():
 
     filename = "llamadas123_julio_2022.csv"
     datos = leer_datos(filename)
-    reporte = generate_report(datos)
-    save_data(reporte, filename)
-    
-
-
-    print('DONE!!!')
+    save_data(datos, filename)
+    print('LISTO')
 
 if __name__ == "__main__":
     main()
